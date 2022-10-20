@@ -1,5 +1,3 @@
-const underaged = 18;
-const elderly = 65;
 const priceonkm = 0.21;
 function check (){
     let age = parseInt(document.getElementById('age').value);
@@ -8,7 +6,7 @@ function check (){
     if(age<underaged){
         price = (price -((price / 100)*20)).toFixed(2);
     }
-    if(age>=elderly)
+    else if(age>=elderly)
     {
         price = (price -((price / 100)*40)).toFixed(2);
     }
