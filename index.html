@@ -27,7 +27,7 @@
             <!-- inputs -->
             <section class="col-10 row justify-content-around text-center">
                 <div class="col-3"><input type="text" id="customerName" class="border border-danger border-1"></div>
-                <div class="col-3"><input type="text" id="travelKm" class="border border-danger border-1"></div>
+                <div class="col-3"><input type="text" id="distance" class="border border-danger border-1"></div>
                 <div class="col-3">
                     <select name="range" id="ageRange" class="border border-danger border-1 w-100">
                         <option value="1">Minorenne</option>
@@ -37,7 +37,7 @@
                 </div>
             </section>
             <section class="text-center mt-4">
-                <button id="confirm" type="button" class="btn bg-secondary text-danger bg-opacity-50 border border-1 border-warning">Conferma</button>
+                <button onclick="confirm ()" type="button" class="btn bg-secondary text-danger bg-opacity-50 border border-1 border-warning">Conferma</button>
                 <button id="cancel" type="button" class="btn bg-secondary text-danger bg-opacity-50">Cancella</button>
             </section>
         </section>
@@ -46,30 +46,30 @@
             <h4>Dettagli passeggero</h4>
             <!-- ticket -->
             <section class="col-12 row my-1 px-0 border border-secondary border-top-1 border-bottom-1 border-start-0 border-end-0">
-                <div id="ticketLeft" class="col-3 py-3 bg-secondary">
+                <div class="col-3 py-3 bg-secondary">
                     <h5>Nome Passeggero</h5>
-                    <span id="voyager"></span>
+                    <div id="name"></div>
                 </div>
-                <div id="ticketRight" class="col-9 pt-3 pb-1 row">
+                <div class="col-9 pt-3 pb-1 row">
                     <!-- kind of ticket -->
-                    <div class="col-3 text-center">
+                    <div class="col-3 d-flex align-items-center flex-column justify-content-between pb-3">
                         <h5 class="fw-bold mb-4">Offerta</h5>
                         <p class="fw-semibold align-bottom m-0">Biglietto Standard</p>
                     </div>
                     <!-- cabin -->
-                    <div class="col-3 text-center">
+                    <div class="col-3 d-flex align-items-center flex-column justify-content-between pb-3">
                         <h5 class="fw-bold mb-4">Carrozza</h5>
                         <p id="cabin" class="fw-semibold align-bottom m-0"></p>
                     </div>
                     <!-- CP Code -->
-                    <div class="col-3 text-center">
-                        <h5 class="fw-bold mb-4">Offerta</h5>
+                    <div class="col-3 d-flex align-items-center flex-column justify-content-between pb-3">
+                        <h5 class="fw-bold mb-4">Codice CP</h5>
                         <p id="cpCode" class="fw-semibold align-bottom m-0"></p>
                     </div>
                     <!-- price -->
-                    <div class="col-3 text-center">
-                        <h5 class="fw-bold mb-4">Offerta</h5>
-                        <p id="price" class="fw-semibold align-bottom m-0"></p>
+                    <div class="col-3 d-flex align-items-center flex-column justify-content-between pb-3">
+                        <h5 class="fw-bold mb-4">Prezzo</h5>
+                        <p id="finalPrice" class="fw-semibold align-bottom m-0"></p>
                     </div>
                 </div>
             </section>
