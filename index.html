@@ -36,35 +36,38 @@
                     </select>
                 </div>
             </section>
-
+            <section class="text-center mt-4">
+                <button id="confirm" type="button" class="btn bg-secondary text-danger bg-opacity-50 border border-1 border-warning">Conferma</button>
+                <button id="cancel" type="button" class="btn bg-secondary text-danger bg-opacity-50">Cancella</button>
+            </section>
         </section>
 
-        <section id="ticket" class="col-9 bg-white row justify-content-center my-3 mx-0 p-2 rounded">
+        <section id="ticket" class="d-none col-9 bg-white row justify-content-center my-3 mx-0 p-2 rounded">
             <h4>Dettagli passeggero</h4>
             <!-- ticket -->
-            <section class="col-12 row my-1 px-0 border border-top-1 border-bottom-1 border-start-0 border-end-0">
+            <section class="col-12 row my-1 px-0 border border-secondary border-top-1 border-bottom-1 border-start-0 border-end-0">
                 <div id="ticketLeft" class="col-3 py-3 bg-secondary">
                     <h5>Nome Passeggero</h5>
                     <span id="voyager"></span>
                 </div>
                 <div id="ticketRight" class="col-9 pt-3 pb-1 row">
                     <!-- kind of ticket -->
-                    <div class="col-3">
+                    <div class="col-3 text-center">
                         <h5 class="fw-bold mb-4">Offerta</h5>
                         <p class="fw-semibold align-bottom m-0">Biglietto Standard</p>
                     </div>
                     <!-- cabin -->
-                    <div class="col-3">
+                    <div class="col-3 text-center">
                         <h5 class="fw-bold mb-4">Carrozza</h5>
                         <p id="cabin" class="fw-semibold align-bottom m-0"></p>
                     </div>
                     <!-- CP Code -->
-                    <div class="col-3">
+                    <div class="col-3 text-center">
                         <h5 class="fw-bold mb-4">Offerta</h5>
                         <p id="cpCode" class="fw-semibold align-bottom m-0"></p>
                     </div>
                     <!-- price -->
-                    <div class="col-3">
+                    <div class="col-3 text-center">
                         <h5 class="fw-bold mb-4">Offerta</h5>
                         <p id="price" class="fw-semibold align-bottom m-0"></p>
                     </div>
