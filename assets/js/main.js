@@ -1,8 +1,8 @@
 let cabin;
 let cp;
 const priceonkm = 0.21;
+var element = document.getElementById("ticket");
 function confirm (){
-    var element = document.getElementById("ticket");
      element.classList.remove("d-none");
     console.log(document.getElementById('ticket').className.remove = "d-none")
     let age = parseInt(document.getElementById('ageRange').value);
@@ -23,4 +23,8 @@ function confirm (){
     document.getElementById('cabin').innerHTML = Math.floor(Math.random() * 10) + 1;
     document.getElementById('cpCode').innerHTML = Math.floor(Math.random() * 9999) + 1;
     document.getElementById('finalPrice').innerHTML = price;
+}
+function cancel(){
+    element.classList.add("d-none");
+    
 }
